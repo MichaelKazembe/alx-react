@@ -1,15 +1,14 @@
 {
   "name": "task_0",
   "version": "1.0.0",
-  "description": "0x00. Webpack",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack"
   },
   "keywords": [],
-  "author": "Michael Kazembe",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.89.0",

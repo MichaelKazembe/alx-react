@@ -1,15 +1,19 @@
 import $ from 'jquery';
 
-$(document).ready(function() {
-    // Create the paragraph elements
-    var $paragraph1 = $('<p>').text('Holberton Dashboard');
-    var $paragraph2 = $('<p>').text('Dashboard data for the students');
-    var $paragraph3 = $('<p>').attr('id', 'count');
-    var $paragraph4 = $('<p>').text('Copyright - Holberton School');
+import _ from 'lodash';
 
-    // Create the button element
-    var $button = $('<button>').text('Click here to get started');
+$('body').append('<p>Holberton Dashboard</p>');
+$('body').append('<p>Dashboard data for the students</p>');
+$('body').append('<button>Click here to get started</button>');
+$('body').append('<p id="count"></p>');
+$('body').append('<p>Copyright - Holberton School</p>');
 
-    // Append the elements in the specified order
-    $('body').append($paragraph1, $paragraph2, $button, $paragraph3, $paragraph4);
-});
+
+let counter = 0;
+
+function updateCounter(){
+	counter ++;
+	$("#count").html('${counter} clicks on the button');
+}
+
+$('button').on('click', _.debounce(updateCounter, 500));

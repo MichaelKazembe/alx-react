@@ -8,13 +8,15 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.css */ "./modules/footer/footer.css");
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_0__);
-const $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.css */ "./modules/footer/footer.css");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_1__);
 
 
-$('body').append('<footer></footer>');
-$('footer').append('<p>Copyright - Holberton School</p>');
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').append('<footer></footer>');
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('footer').append('<p>Copyright - Holberton School</p>');
 
 /***/ }),
 
@@ -34,4 +36,4 @@ throw new Error("Module build failed (from ./node_modules/css-loader/dist/cjs.js
 /******/ var __webpack_exports__ = (__webpack_exec__("./modules/footer/footer.js"));
 /******/ }
 ]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZm9vdGVyLmJ1bmRsZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFBQSxVQUFVLG1CQUFPLENBQUMsb0RBQVE7QUFDSjs7QUFFdEI7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Rhc2tfMy8uL21vZHVsZXMvZm9vdGVyL2Zvb3Rlci5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCAkID0gcmVxdWlyZSgnanF1ZXJ5Jyk7XG5pbXBvcnQgJy4vZm9vdGVyLmNzcyc7XG5cbiQoJ2JvZHknKS5hcHBlbmQoJzxmb290ZXI+PC9mb290ZXI+Jyk7XG4kKCdmb290ZXInKS5hcHBlbmQoJzxwPkNvcHlyaWdodCAtIEhvbGJlcnRvbiBTY2hvb2w8L3A+Jyk7Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZm9vdGVyLmJ1bmRsZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQUF1QjtBQUNEOztBQUV0Qiw2Q0FBQztBQUNELDZDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdGFza18zLy4vbW9kdWxlcy9mb290ZXIvZm9vdGVyLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAkIGZyb20gJ2pxdWVyeSc7XG5pbXBvcnQgJy4vZm9vdGVyLmNzcyc7XG5cbiQoJ2JvZHknKS5hcHBlbmQoJzxmb290ZXI+PC9mb290ZXI+Jyk7XG4kKCdmb290ZXInKS5hcHBlbmQoJzxwPkNvcHlyaWdodCAtIEhvbGJlcnRvbiBTY2hvb2w8L3A+Jyk7Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9

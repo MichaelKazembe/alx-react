@@ -8,27 +8,28 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _body_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./body.css */ "./modules/body/body.css");
-/* harmony import */ var _body_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_body_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _body_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./body.css */ "./modules/body/body.css");
+/* harmony import */ var _body_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_body_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').append('<button>Click here to get started</button>');
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').append('<p id="count"><p>');
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').append('<button>Click here to get started</button>');
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').append('<p id="count"></p>');
 
 let counter = 0;
 
-function updateCounter(){
-	counter ++;
-	jquery__WEBPACK_IMPORTED_MODULE_0___default()("#count").html('${counter} clicks on the button');
+function updateCounter() {
+  counter++;
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()("#count").html(`${counter} clicks on the button`);
 }
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('button').on('click', lodash__WEBPACK_IMPORTED_MODULE_1___default().debounce(updateCounter, 500));
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('button').on('click', lodash__WEBPACK_IMPORTED_MODULE_2___default().debounce(updateCounter, 500));
+
 
 /***/ }),
 
@@ -49,4 +50,4 @@ throw new Error("Module build failed (from ./node_modules/css-loader/dist/cjs.js
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYm9keS5idW5kbGUuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUF1QjtBQUNBO0FBQ0g7O0FBRXBCLDZDQUFDO0FBQ0QsNkNBQUM7O0FBRUQ7O0FBRUE7QUFDQTtBQUNBLENBQUMsNkNBQUMsbUJBQW1CLFNBQVM7QUFDOUI7O0FBRUEsNkNBQUMsdUJBQXVCLHNEQUFVIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdGFza18zLy4vbW9kdWxlcy9ib2R5L2JvZHkuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICQgZnJvbSAnanF1ZXJ5JztcbmltcG9ydCBfIGZyb20gJ2xvZGFzaCc7XG5pbXBvcnQgJy4vYm9keS5jc3MnO1xuXG4kKCdib2R5JykuYXBwZW5kKCc8YnV0dG9uPkNsaWNrIGhlcmUgdG8gZ2V0IHN0YXJ0ZWQ8L2J1dHRvbj4nKTtcbiQoJ2JvZHknKS5hcHBlbmQoJzxwIGlkPVwiY291bnRcIj48cD4nKTtcblxubGV0IGNvdW50ZXIgPSAwO1xuXG5mdW5jdGlvbiB1cGRhdGVDb3VudGVyKCl7XG5cdGNvdW50ZXIgKys7XG5cdCQoXCIjY291bnRcIikuaHRtbCgnJHtjb3VudGVyfSBjbGlja3Mgb24gdGhlIGJ1dHRvbicpO1xufVxuXG4kKCdidXR0b24nKS5vbignY2xpY2snLCBfLmRlYm91bmNlKHVwZGF0ZUNvdW50ZXIsIDUwMCkpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYm9keS5idW5kbGUuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFvQjtBQUNHO0FBQ0E7O0FBRXZCLDZDQUFDO0FBQ0QsNkNBQUM7O0FBRUQ7O0FBRUE7QUFDQTtBQUNBLEVBQUUsNkNBQUMsbUJBQW1CLFNBQVM7QUFDL0I7O0FBRUEsNkNBQUMsdUJBQXVCLHNEQUFVIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdGFza18zLy4vbW9kdWxlcy9ib2R5L2JvZHkuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuL2JvZHkuY3NzJztcbmltcG9ydCAkIGZyb20gJ2pxdWVyeSc7XG5pbXBvcnQgXyBmcm9tICdsb2Rhc2gnO1xuXG4kKCdib2R5JykuYXBwZW5kKCc8YnV0dG9uPkNsaWNrIGhlcmUgdG8gZ2V0IHN0YXJ0ZWQ8L2J1dHRvbj4nKTtcbiQoJ2JvZHknKS5hcHBlbmQoJzxwIGlkPVwiY291bnRcIj48L3A+Jyk7XG5cbmxldCBjb3VudGVyID0gMDtcblxuZnVuY3Rpb24gdXBkYXRlQ291bnRlcigpIHtcbiAgY291bnRlcisrO1xuICAkKFwiI2NvdW50XCIpLmh0bWwoYCR7Y291bnRlcn0gY2xpY2tzIG9uIHRoZSBidXR0b25gKTtcbn1cblxuJCgnYnV0dG9uJykub24oJ2NsaWNrJywgXy5kZWJvdW5jZSh1cGRhdGVDb3VudGVyLCA1MDApKTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==

@@ -1,0 +1,21 @@
+.Notifications {
+    border: 3px dotted #E0354B;
+    padding: 6px 12px;
+    
+}
+
+.Notifications img {
+    float: inline-end;
+    width: 10px;
+    height: 10px;
+}
+
+li[data-priority= "default"] {
+    color: blue;
+}
+
+li[data-priority= "urgent"] {
+    color: red;
+}
+
+

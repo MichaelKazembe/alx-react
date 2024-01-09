@@ -12,8 +12,9 @@
 	font-size: var(--heading-font-size);
 	color: #E0354B;
 	display: flex;
+	flex-direction: row;
+	justify-content: left;
 	align-items: center;
-	padding: var(--padding);
 	border-bottom: var(--border-bottom);
 }
 

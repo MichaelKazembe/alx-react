@@ -1,11 +1,14 @@
 .Notifications {
-    border: 3px dotted #E0354B;
+    border: 2px dotted #e1343a;
+;
     padding: 6px 12px;
     
 }
 
 .Notifications img {
-    float: inline-end;
+    float: right;
+    padding-right: 15px;
+    padding-top: 8px;
     width: 10px;
     height: 10px;
 }

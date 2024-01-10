@@ -11,11 +11,16 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://michaelkazembe.github.io/alx-react/",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "predeploy": "npm run build",
+  "deploy": "dashboard -d build -b gh-pages -o https://github.com/michaelkazembe/alx-react.git",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+
   },
   "eslintConfig": {
     "extends": [

@@ -15,10 +15,13 @@ module.exports = {
     compress: true,
     port: 8564,
   },
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+  }, // Add closing brace for resolve object
   performance: {
     maxAssetSize: 1000000,
     maxEntrypointSize: 1000000,
-  },
+  }, // Add closing brace for performance object
   plugins: [
     new HtmlWebpackPlugin({
       name: 'index.html',
@@ -29,9 +32,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       },
       {
         test: /\.css$/i,

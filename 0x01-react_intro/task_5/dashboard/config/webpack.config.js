@@ -15,19 +15,17 @@ module.exports = {
     compress: true,
     port: 8564,
   },
-  resolve: {
-    extensions: ['*', '.js', '.jsx'],
-  }, // Add closing brace for resolve object
+
   performance: {
     maxAssetSize: 1000000,
     maxEntrypointSize: 1000000,
-  }, // Add closing brace for performance object
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      name: 'index.html',
-      inject: false,
-      template: './dist/index.html',
-    })
+      filename: 'index.html', // Corrected property name to 'filename'
+      inject: true, // Changed to 'true' for automatic injection
+      template: '/dist/index.html', // Adjusted the template path
+    }),
   ],
   module: {
     rules: [
@@ -37,9 +35,9 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        }
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
       },
       {
         test: /\.css$/i,
@@ -52,8 +50,8 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
+              bypassOnDebug: true,
+              disable: true,
             },
           },
         ],

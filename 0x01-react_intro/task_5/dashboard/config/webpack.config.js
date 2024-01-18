@@ -24,7 +24,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html', // Corrected property name to 'filename'
       inject: true, // Changed to 'true' for automatic injection
-      template: '/dist/index.html', // Adjusted the template path
+      template: './dist/index.html', // Adjusted the template path
     }),
   ],
   module: {

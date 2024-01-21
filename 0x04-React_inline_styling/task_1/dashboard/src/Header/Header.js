@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/holberton_logo.jpg';
+import logo from '../assets/holberton-logo.jpg';
 import { StyleSheet, css } from 'aphrodite';
 
 function Header() {
@@ -21,7 +21,7 @@ const headerStyles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		color: '#E11D3F',
-		borderBottom: '1px solid #E11D3F',
+		borderBottom: '3px solid #E11D3F',
 	},
 
 	appLogo: {

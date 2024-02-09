@@ -1,6 +1,7 @@
 # 0x07-react_redux_action_creator_normalizr
 
 ## Resources
+
 Read or watch:
 
 * Normalizr
@@ -11,6 +12,7 @@ Read or watch:
 * Writing tests for Redux
 
 ## Learning Objectives
+
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 * Normalizr’s purpose and how to use it
@@ -22,6 +24,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * How to write tests for Redux
 
 ## Requirements
+
 * Allowed editors: `vi, vim, emacs, Visual Studio Code`
 * All your files should end with a new line
 * All your files will be interpreted/compiled on `Ubuntu 18.04 LTS` using `node 12.x.x` and `npm 6.x.x`

@@ -42,3 +42,37 @@ describe('uiActionCreators', () => {
         expect(result).toEqual(userData);
     });
 });
+
+describe('loginRequest', () => {
+    it('should dispatch LOGIN and LOGIN_SUCCESS actions on successful API response', async () => {
+        // Mock the API response
+        const mockResponse = { success: true };
+        jest.spyOn(api, 'loginRequest').mockResolvedValue(mockResponse);
+
+        // Dispatch the action
+        const dispatch = jest.fn();
+        await (async () => {
+            await loginRequest('user.email', 'user.password')(dispatch);
+
+            // Verify the dispatched actions
+            expect(dispatch).toHaveBeenCalledWith({ type: LOGIN });
+            expect(dispatch).toHaveBeenCalledWith({ type: LOGIN_SUCCESS });
+        })();
+    });
+
+    it('should dispatch LOGIN and LOGIN_FAILURE actions on API query failure', async () => {
+        // Mock the API response
+        const mockError = new Error('API query failed');
+        jest.spyOn(api, 'loginRequest').mockRejectedValue(mockError);
+
+        // Dispatch the action
+        const dispatch = jest.fn();
+        await (async () => {
+            await loginRequest('user.email', 'user.password')(dispatch);
+
+            // Verify the dispatched actions
+            expect(dispatch).toHaveBeenCalledWith({ type: LOGIN });
+            expect(dispatch).toHaveBeenCalledWith({ type: LOGIN_FAILURE });
+        })();
+    });
+});

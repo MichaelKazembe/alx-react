@@ -5,6 +5,11 @@ import App from './App';
 import { StyleSheetTestUtils } from 'aphrodite';
 import { AppContext, user, logOut } from './AppContext';
 
+import { fromJS } from "immutable";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import uiReducer, { initialState } from "../reducers/uiReducer";
+
 describe('Test App.js', () => {
   let wrapper;
 
@@ -174,4 +179,18 @@ describe("Testing App Component's State />", () => {
 
 		wrapper.unmount();
 	})
+});
+
+const store = createStore(uiReducer, initialState);
+
+describe("<App />", () => {
+  it("mapStateToProps returns the right object from user Login", () => {
+    let state = fromJS({
+      isUserLoggedIn: true,
+    });
+
+    const result = mapStateToProps(state);
+
+    expect(result).toEqual({ isLoggedIn: true });
+  });
 });

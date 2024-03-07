@@ -1,5 +1,4 @@
 //App.js
-
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Notifications from "../Notifications/Notifications";
@@ -196,5 +195,6 @@ export const mapStateToProps = (state) => {
   };
 };
 
+// export default App;
 
 export default connect(mapStateToProps)(App);
